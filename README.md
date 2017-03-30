@@ -138,7 +138,11 @@ vw-web-api
 
 ```
 
-#### Setup & run VW IoT device infrastructure
+#### Setup & run VW Financial Services IoT device infrastructure
+
+The picture below shows a conception overview of the implemented IoT device infrastructure. It outlines the core components as well as how they interact which each other.
+
+![](./doc/images/vw-IoT-device-infrastructure.png)
 
 ##### Setup the ETL process
 
@@ -164,6 +168,10 @@ This section explains how to setup the ETL process. It uses an Azure Logic App w
 3. Enter a name for your logic app, select a location, resource group, and select *Create*.
 4. After opening your logic app for the first time you can select from a template to start. Click *Blank Logic App* to build this from scratch.
 5. Navigate to its *Code View* and paste the code from the repository. Make sure you replace all the relevant places and link your Azure functions.
+
+Here is a designer representation of the Logic App and the different steps:
+
+![](./doc/images/azure-logic-app.png)
 
 ##### Create an Azure IoT Hub and connect IoT devices (virtual vehicle)
 
